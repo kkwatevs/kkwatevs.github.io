@@ -52,6 +52,20 @@
 <button onclick="myFunction3()">11Hours</button>
 <button onclick="myFunction4()">12Hours</button>
 </p>
+<p>
+	
+	<form method="POST" action="foo.php">
+
+Number of Hours of Light: <input type="int" name="NumberHours" /> <br />
+
+<input type="submit" name="action" value="Submit" />
+
+</form>
+	
+	
+	
+		</p>		
+		
 		
 <script>
 function myFunction() {
@@ -59,6 +73,8 @@ function myFunction() {
     var t = document.createTextNode("You have chosen 8Hours");
     x.appendChild(t);
     document.body.appendChild(x);
+	
+	
 }
 	
 </script>
