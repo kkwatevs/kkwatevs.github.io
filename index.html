@@ -13,29 +13,41 @@
 		
 	</head>
 	<script>
-	function startTime() {
+	function stuff() {
 		  var today = new Date();
 		  var h = today.getHours();
 		  var m = today.getMinutes();
 		  var s = today.getSeconds();
  		  var t = setTimeout(startTime, 500);
+		 document.write("img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg">");
+			
 	}
+	function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg;
+    img.height = 400px;
+
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
+}
 
 	</script>
 	<body>
 		<header align="center"; style=" color: blue; font-family: arial">
 			West Kootenays  
 		</header>
+		<p align="center";>  stuff()  </p>
+		<p align="center";>  show_image()  </p>
+		
+		
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg" style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/446.jpg"style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/174.jpg"style = "width:400px"; align="center">
 		<p align= "center"; style"width:400px";>	Anarchist Summit___________________________________Rock Creek_______________________________________Paulson Summit	</p>
-		{% if m =>30%}
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg" style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/446.jpg"style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/174.jpg"style = "width:400px"; align="center">
 		<p align= "centert"; style"width:400px";>	Anarhist Summit	</p>
-		{%endif%}
 		
 		<p align= " center";>
 			<a href="https://thingspeak.com/channels/609577";  style="color:blue; font-family:arial">Thing speak stuff</a>
