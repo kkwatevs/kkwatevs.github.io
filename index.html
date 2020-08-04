@@ -24,8 +24,8 @@
 	}
 	function show_image(src, width, height, alt) {
     var img = document.createElement("img");
-    img.src = https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg;
-    img.height = 400px;
+    img.src = src;
+    img.height = height;
 
     // This next line will just add it to the <body> tag
     document.body.appendChild(img);
@@ -37,7 +37,7 @@
 			West Kootenays  
 		</header>
 		<p align="center";>  stuff()  </p>
-		<p align="center";>  show_image()  </p>
+		<p align="center";>  "show_image('https://images.drivebc.ca/bchighwaycam/pub/cameras/64',400)"  </p>
 		
 		
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg" style="width:400px"; align="center">
