@@ -12,7 +12,16 @@
 		
 		
 	</head>
-	
+	<script>
+	function startTime() {
+		  var today = new Date();
+		  var h = today.getHours();
+		  var m = today.getMinutes();
+		  var s = today.getSeconds();
+ 		  var t = setTimeout(startTime, 500);
+	}
+
+	</script>
 	<body>
 		<header align="center"; style=" color: blue; font-family: arial">
 			West Kootenays  
@@ -21,13 +30,12 @@
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/446.jpg"style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/174.jpg"style = "width:400px"; align="center">
 		<p align= "center"; style"width:400px";>	Anarchist Summit___________________________________Rock Creek_______________________________________Paulson Summit	</p>
+		{% if m =<30%}
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/64.jpg" style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/446.jpg"style="width:400px"; align="center">
 		<img src="https://images.drivebc.ca/bchighwaycam/pub/cameras/174.jpg"style = "width:400px"; align="center">
 		<p align= "centert"; style"width:400px";>	Anarhist Summit	</p>
-		<p align= "center"; style"width:400px";>	Rock Creek 	</p>
-		<p align= "center"; style"width:400px";>	Paulson Summit		</p>
-		
+		{%endif%}
 		
 		<p align= " center";>
 			<a href="https://thingspeak.com/channels/609577";  style="color:blue; font-family:arial">Thing speak stuff</a>
